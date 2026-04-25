@@ -4,12 +4,12 @@
 - Используется стек: Vue 3 + TypeScript + Pinia + Axios + Vite + `vue-router` + `vue-i18n` + `vue3-cookies`.
 - Приложение лежит в правильной зоне: `services/staff/*` (основной случай), `services/external/*` или `services/dev/*`.
 - Перед написанием кода перечитаны:
-  - `docs/design-guidelines/vue/frontend_architecture.md`
-  - `docs/design-guidelines/vue/frontend_code_rules.md`
-  - `docs/design-guidelines/vue/frontend_data_and_state.md`
+  - `frontend_architecture.md`
+  - `frontend_code_rules.md`
+  - `frontend_data_and_state.md`
 
 ## Структура и зависимости
-- Структура `src/` выдержана (см. `docs/design-guidelines/vue/frontend_architecture.md`).
+- Структура `src/` выдержана (см. `frontend_architecture.md`).
 - Нет циклических зависимостей; `shared/*` не импортирует `features/pages`.
 
 ## Типы, модели, константы, helpers
@@ -38,4 +38,4 @@
 
 ## libs
 - Код, требуемый >= 2 приложениями, вынесен в `libs/{vue|ts}` по правилам общих гайдов.
-- Перед пушем выполнена повторная сверка с `docs/design-guidelines/common/check_list.md` и текущим файлом; нарушения по размещению типов/моделей/констант/helper-кода устранены.
+- Перед пушем выполнена повторная сверка с `github.com/codex-k8s/kodex-guidelines-common/check_list.md` и текущим файлом; нарушения по размещению типов/моделей/констант/helper-кода устранены.
